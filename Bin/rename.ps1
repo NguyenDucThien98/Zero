@@ -1,0 +1,1 @@
+cd F:\netbean\Zero\Downloads2\ ; dir | rename-item -NewName {$_.name.Replace(" ","_")};

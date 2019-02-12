@@ -1,0 +1,1 @@
+ffmpeg -y -ss 10 -i "{input}.*" -vf drawtext="fontsize=50:fontcolor=white:fontfile=/Windows/Fonts/impact.ttf:text=Doan Van Ban Can Chen:x=(w-text_w)/2:y=200" -acodec copy "{output}.mp4"

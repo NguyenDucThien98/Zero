@@ -1,0 +1,1 @@
+﻿ffmpeg -y -ss 10 -i "audio.wav" -i "{input}.*" -codec copy -shortest -preset superfast "{output}.mp4"

@@ -1,0 +1,1 @@
+ffmpeg -y -ss 10 -i "{input}.*" -af "pan=stereo|c0<0*c0+c1|c1<0*c0+c1,aeval=-val(0)|val(1),volume=1.6" -filter_complex "scale=1280:720,setdar=16/9" -vcodec libx264 -pix_fmt yuv420p -r 30 -g 60 -b:v 1400k -profile:v main -level 3.1 -acodec libmp3lame -b:a 128k -ar 44100 -threads 0 -preset superfast "{output}.mp4"

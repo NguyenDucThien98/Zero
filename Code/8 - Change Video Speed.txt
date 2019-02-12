@@ -1,0 +1,1 @@
+ffmpeg -y -ss 10 -i "{input}.*" -filter_complex "setpts=PTS/1.6; atempo=1.6" "{output}.mp4"
